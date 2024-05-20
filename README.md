@@ -1,5 +1,5 @@
 ## Gimlet sample app
-
+👀
 A webserver with a few configuration options.
 
 ## Usage
