@@ -1,0 +1,19 @@
+app: gimlet-sample-app-d750
+env: duck-break
+namespace: default
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.64.0
+values:
+  containerPort: 80
+  gitRepository: impzero/gimlet-sample-app
+  gitSha: '{{ .SHA }}'
+  image:
+    dockerfile: ""
+    repository: ghcr.io/impzero/gimlet-sample-app
+    tag: '{{.SHA}}'
+  imagePullSecrets: []
+  replicas: 1
+  resources:
+    ignoreLimits: true
