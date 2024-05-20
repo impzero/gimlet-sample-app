@@ -10,9 +10,9 @@ fi
 cat > /usr/share/nginx/html/index.html <<EOF
 <html>
 <body style="${BODYSTYLE};">
-<h1>$TITLE</h1>
+<h1>Amazing</h1>
 
-$BODY
+Body
 
 <hr/>
 hostname: $HOSTNAME
