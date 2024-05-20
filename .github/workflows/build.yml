@@ -16,7 +16,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.PAT }} # `PAT` is a secret that contains your Personal Access Token with `write:packages` scope
+          password: ${{ secrets.PAT }}
       - name: 🚀 Build and push Docker image
         uses: docker/build-push-action@v3
         with:
